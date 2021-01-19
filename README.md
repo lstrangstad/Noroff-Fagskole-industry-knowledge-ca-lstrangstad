@@ -1,0 +1,1 @@
+# Noroff-Fagskole-industry-knowledge-ca-lstrangstad
