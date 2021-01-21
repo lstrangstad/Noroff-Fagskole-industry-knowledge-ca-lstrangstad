@@ -1,0 +1,62 @@
+.footer {
+  background-color: $footerColor;
+
+  &__top-link {
+    background-color: $yellowContrast;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: -25px;
+    animation: arrowLink 2s linear infinite;
+  }
+
+  @keyframes arrowLink {
+    50% {
+      transform: translateY(5px);
+    }
+  }
+
+  &__arrow {
+    width: 25px;
+    position: relative;
+    top: 10px;
+    filter: invert(100%) sepia(1%) saturate(1035%) hue-rotate(233deg)
+      brightness(117%) contrast(100%);
+  }
+
+  &__soMe {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
+
+  &__box {
+    height: 50px;
+    width: 50px;
+    background-color: #505269;
+    text-align: center;
+  }
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+    filter: invert(100%) sepia(1%) saturate(1035%) hue-rotate(233deg)
+      brightness(117%) contrast(100%);
+  }
+
+  &__copyright {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    color: #9294b1;
+  }
+
+  &__year {
+    color: $yellowContrast;
+  }
+}
