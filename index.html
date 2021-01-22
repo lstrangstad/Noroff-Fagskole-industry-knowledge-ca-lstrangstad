@@ -16,10 +16,12 @@
           I'm a front-end web developer.</h1>
       </div>
       <h2 class="header__typing"></h2>
-      <div class="header__button">
-        <a class="header__link" href="#projects">MY PROJECTS
-          <img class="header__arrow" src="./image/right-arrow.svg" alt="arrow"></a>
-      </div>
+      <a class="header__link" href="#projects">
+        <div class="header__button">
+          MY PROJECTS
+          <img class="header__arrow" src="./image/right-arrow.svg" alt="arrow">
+      </a>
+    </div>
     </div>
   </header>
   <nav class="nav">
@@ -123,17 +125,44 @@
   <section class="projects" id="projects">
     <h3 class="projects__header">Projects</h3>
     <div class="projects__container">
-      <div class="projects__card">
-        <a class="projects__link" href="#">
-          <img class="projects__img" src="./image/ecommerce.png" alt="project">
+      <div class="projects__card-container">
+        <div class="projects__card">
+          <div class="projects__front">
+            <img class="projects__img" src="./image/ecommerce.png" alt="project">
+          </div>
+          <div class="projects__back">
+            <div class="projects__back-content">
+              <h4 class="projects__back-header">Ecommerce project</h4>
+              <a class="projects__back-link" href="">Source Code</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="projects__card">
-        <a class="projects__link" href="">
-          <img class="projects__img" src="./image/recipe-app.png" alt="project">
+      <div class="projects__card-container">
+        <div class="projects__card">
+          <div class="projects__front">
+            <img class="projects__img" src="./image/recipe-app.png" alt="project">
+          </div>
+          <div class="projects__back">
+            <div class="projects__back-content">
+              <h4 class="projects__back-header">recipe app</h4>
+              <a class="projects__back-link" href="">Source Code</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="projects__card">
-        <a class="projects__link" href="">
-          <img class="projects__img" src="./image/favourites.png" alt="project">
+      <div class="projects__card-container">
+        <div class="projects__card">
+          <div class="projects__front">
+            <img class="projects__img" src="./image/favourites.png" alt="project">
+          </div>
+          <div class="projects__back">
+            <div class="projects__back-content">
+              <h4 class="projects__back-header">Favorites/Local storage project</h4>
+              <a class="projects__back-link" href="">Source Code</a>
+            </div>
+          </div>
+        </div>
       </div>
       </a>
     </div>
@@ -147,9 +176,12 @@
     <p class="contact__text">If you have some questions
       or want to work together?</p>
     <form class="contact__form">
-      <input class="contact__input" type="text" placeholder="Name">
-      <input class="contact__input" type="text" placeholder="Email">
-      <textarea class="contact__message" name="message" id="message" cols="30" rows="10"
+      <div id="nameError" class="contact__error"></div>
+      <input id="nameInput" class="contact__input" type="text" placeholder="Name">
+      <div class="contact__error" id="emailError"></div>
+      <input id="emailInput" class="contact__input" type="text" placeholder="Email">
+      <div class="contact__error" id="messageError"></div>
+      <textarea id="messageInput" class="contact__message" name="message" id="message" cols="30" rows="10"
         placeholder="Your Message..."></textarea>
       <button class="contact__button">Submit</button>
     </form>
