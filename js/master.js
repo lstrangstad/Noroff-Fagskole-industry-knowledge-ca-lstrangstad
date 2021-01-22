@@ -20,7 +20,6 @@ let letter = "";
 })();
 
 const formOutput = document.querySelector(".contact__form");
-const errorMessage = document.querySelector(".error-message");
 
 formOutput.addEventListener("submit", formValidator);
 
@@ -28,11 +27,30 @@ function formValidator(e) {
   e.preventDefault();
 
   const nameValue = document.querySelector("#nameInput").value;
+  const nameError = document.querySelector("#nameError");
+
+  const emailValue = document.querySelector("#emailInput").value;
+  const emailError = document.querySelector("#emailError");
+
+  const messageValue = document.querySelector("#messageInput").value;
+  const messageError = document.querySelector("#messageError");
 
   if (nameValidator(nameValue) == !true) {
-    errorMessage.innerHTML = "Please enter name with at least two characters";
+    nameError.innerHTML = "Please enter name with at least two characters";
   } else {
-    errorMessage.style.display = "none";
+    nameError.style.display = "none";
+  }
+
+  if (emailValidator(emailValue) == !true) {
+    emailError.innerHTML = "Please enter valid email";
+  } else {
+    emailError.style.display = "none";
+  }
+
+  if (nameValidator(messageValue) == !true) {
+    messageError.innerHTML = "Please enter message longer than two characters";
+  } else {
+    messageError.style.display = "none";
   }
 }
 
@@ -45,4 +63,7 @@ function nameValidator(string) {
   }
 }
 
-function emailValidator()
+function emailValidator(mail) {
+  const regEx = /\S+@\S+\.\S+/;
+  return regEx.test(mail);
+}
