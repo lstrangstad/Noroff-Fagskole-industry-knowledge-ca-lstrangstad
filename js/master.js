@@ -1,4 +1,4 @@
-const words = ["HTML", "CSS", "JavaScript", "React", "SASS"];
+const words = ["HTML", "CSS", "JavaScript", "React", "SASS", "GIT"];
 let count = 0;
 let index = 0;
 let currentWord = "";
