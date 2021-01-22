@@ -9,16 +9,24 @@
     display: flex;
     list-style: none;
     padding: 15px;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   &__link {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-
+    padding: 10px;
     &--active {
       color: $yellowContrast;
+    }
+  }
+}
+
+@media (min-width: 820px) {
+  .nav {
+    &__list {
+      justify-content: left;
     }
   }
 }

@@ -4,7 +4,9 @@
 
   &__content {
     position: relative;
-    top: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     font-family: $headerFont;
@@ -84,6 +86,22 @@
     &:hover {
       transition: 0.9s;
       transform: rotate(90deg);
+    }
+  }
+}
+
+@media (min-width: 820px) {
+  .header {
+    &__text {
+      font-size: 56px;
+    }
+
+    &__typing {
+      font-size: 36px;
+    }
+
+    &__button {
+      max-width: 300px;
     }
   }
 }

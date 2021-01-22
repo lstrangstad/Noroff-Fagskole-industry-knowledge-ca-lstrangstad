@@ -7,13 +7,13 @@
     font-family: $headerFont;
     font-size: 32px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
   &__text {
-    width: 60%;
+    width: 220px;
     text-align: center;
-    margin: 0 auto;
+    margin: 15px auto;
     color: $orangeContrast;
     font-size: 14px;
   }
@@ -45,5 +45,31 @@
     color: #fff;
     text-transform: uppercase;
     font-size: 14px;
+  }
+}
+
+@media (min-width: 820px) {
+  .contact {
+    &__block {
+      height: 50px;
+    }
+
+    &__header {
+      font-size: 42px;
+    }
+
+    &__form {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    &__button {
+      transition: 0.5s;
+    }
+
+    &__button:hover {
+      border: 2px solid $orangeContrast;
+      background-color: $orangeContrast;
+    }
   }
 }
