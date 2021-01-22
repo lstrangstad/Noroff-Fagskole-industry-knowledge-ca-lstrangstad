@@ -29,7 +29,7 @@
 
   &__soMe {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 15px;
   }
 
@@ -38,6 +38,12 @@
     width: 50px;
     background-color: #505269;
     text-align: center;
+    margin: 0 15px;
+
+    &:hover {
+      transform: translateY(5px);
+      background-color: darken(#505269, 15%);
+    }
   }
 
   &__icon {
@@ -49,6 +55,7 @@
   }
 
   &__copyright {
+    font-size: 12px;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 15px;
