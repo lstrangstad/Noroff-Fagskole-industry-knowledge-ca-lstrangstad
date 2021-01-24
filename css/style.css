@@ -441,6 +441,9 @@ img {
   .projects__card-info {
     font-size: 16px;
   }
+  .projects__card-link {
+    font-size: 16px;
+  }
 }
 
 .contact {
