@@ -410,6 +410,9 @@ img {
 }
 
 @media (min-width: 820px) {
+  .projects {
+    height: 80vh;
+  }
   .projects__header {
     font-size: 42px;
   }
@@ -580,7 +583,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 .footer__box {
