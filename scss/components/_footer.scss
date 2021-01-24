@@ -11,6 +11,10 @@
     position: relative;
     top: -25px;
     animation: arrowLink 2s linear infinite;
+
+    &:hover {
+      background-color: darken($yellowContrast, 5%);
+    }
   }
 
   @keyframes arrowLink {
@@ -41,7 +45,7 @@
     margin: 0 15px;
 
     &:hover {
-      transform: translateY(5px);
+      transform: translateY(3px);
       background-color: darken(#505269, 15%);
     }
   }
