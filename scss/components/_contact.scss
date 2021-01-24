@@ -32,10 +32,15 @@
     background: #30353e;
     border: none;
     color: #fff;
+    outline: none;
   }
 
   ::placeholder {
     color: $greyColor;
+  }
+
+  &__error {
+    color: rgb(255, 75, 75);
   }
 
   &__button {
@@ -63,11 +68,8 @@
       margin: 0 auto;
     }
 
-    &__button {
-      transition: 0.5s;
-    }
-
     &__button:hover {
+      transition: 0.4s;
       border: 2px solid $orangeContrast;
       background-color: $orangeContrast;
     }
