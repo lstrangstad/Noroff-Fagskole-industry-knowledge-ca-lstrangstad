@@ -426,6 +426,17 @@ img {
   }
   .projects__card {
     max-width: 400px;
+    height: 400px;
+    text-align: center;
+  }
+  .projects__img {
+    max-height: 200px;
+  }
+  .projects__card-header {
+    font-size: 24px;
+  }
+  .projects__card-info {
+    font-size: 16px;
   }
 }
 
