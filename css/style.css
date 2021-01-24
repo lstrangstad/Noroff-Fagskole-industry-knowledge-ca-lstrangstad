@@ -353,6 +353,8 @@ img {
     max-width: 100px;
   }
   .about__skill-img:hover {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
