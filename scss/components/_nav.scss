@@ -16,9 +16,10 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    padding: 10px;
-    &--active {
+    margin: 10px;
+    &:hover {
       color: $yellowContrast;
+      border-bottom: 2px solid $yellowContrast;
     }
   }
 }
