@@ -27,7 +27,7 @@
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item">
-        <a class="nav__link nav__link--active" href="#header">Home</a>
+        <a class="nav__link" href="#header">Home</a>
       </li>
       <li class="nav__item">
         <a class="nav__link" href="#about">About</a>
@@ -48,7 +48,7 @@
           <img class="about__icon" src="./image/about-icons/speedometer.svg" alt="Fast">
         </div>
         <h4 class="about__box-header">Fast</h4>
-        <p class="about__text">Fast load and lag free interaction, HIGH PRIORITY!</p>
+        <p class="about__text">Fast load and lag free interaction.</p>
       </div>
       <div class="about__box">
         <div class="about__circle">
@@ -63,7 +63,7 @@
           <img class="about__icon" src="./image/about-icons/lightbulb.svg" alt="Simple">
         </div>
         <h4 class="about__box-header">Simple</h4>
-        <p class="about__text">Strong preference for easy to
+        <p class="about__text">Make easy to
           use, intuitive UX/UI.</p>
       </div>
       <div class="about__box">
@@ -71,18 +71,17 @@
           <img class="about__icon" src="./image/about-icons/code.svg" alt="Clean">
         </div>
         <h4 class="about__box-header">Clean</h4>
-        <p class="about__text">Always develope to
-          write easy to read code.</p>
+        <p class="about__text">Clean and easy to read code.</p>
       </div>
     </div>
     <div class="about__me">
       <div class="about__me-container">
-        <img class="about__selfie" src="./image/me.jpg" alt="Selfie">
+        <div class="about__selfie"></div>
         <h4 class="about__me-header">Who am I?</h4>
         <p class="about__me-text">I’m studying Front-End Development at <a class="about__link"
             href="www.noroff.no/en">Noroff</a> in
           Bergen, Norway.
-          I have serious passion for UI effects, animations and creating
+          I have a passion for clean layouts, animations and creating
           intuitive, dynamic user experiences.
           <a class="about__link" href="">Let’s make something special</a>.
         </p>
@@ -127,40 +126,42 @@
     <div class="projects__container">
       <div class="projects__card-container">
         <div class="projects__card">
-          <div class="projects__front">
-            <img class="projects__img" src="./image/ecommerce.png" alt="project">
-          </div>
-          <div class="projects__back">
-            <div class="projects__back-content">
-              <h4 class="projects__back-header">Ecommerce project</h4>
-              <a class="projects__back-link" href="">Source Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="projects__card-container">
-        <div class="projects__card">
-          <div class="projects__front">
-            <img class="projects__img" src="./image/recipe-app.png" alt="project">
-          </div>
-          <div class="projects__back">
-            <div class="projects__back-content">
-              <h4 class="projects__back-header">recipe app</h4>
-              <a class="projects__back-link" href="">Source Code</a>
-            </div>
+
+          <img class="projects__img" src="./image/ecommerce.png" alt="project">
+          <div class="projects__card-content">
+            <h4 class="projects__card-header">Ecommerce project</h4>
+            <p class="projects__card-info">
+              In this semester project we were told to make an e-commerce site. With login for admins to add, edit or
+              delete
+              a product. And fetch products from strapi.
+            </p>
+            <a class="projects__card-link" href="">Source Code</a>
           </div>
         </div>
       </div>
       <div class="projects__card-container">
         <div class="projects__card">
-          <div class="projects__front">
-            <img class="projects__img" src="./image/favourites.png" alt="project">
+          <img class="projects__img" src="./image/recipe-app.png" alt="project">
+          <div class="projects__card-content">
+            <h4 class="projects__card-header">Recipe app</h4>
+            <p class="projects__card-info">
+              This is a follow along project i have done using React. Just for practice, with api and using useState and
+              useEffect. With a search to render other products.
+            </p>
+            <a class="projects__card-link" href="">Source Code</a>
           </div>
-          <div class="projects__back">
-            <div class="projects__back-content">
-              <h4 class="projects__back-header">Favorites/Local storage project</h4>
-              <a class="projects__back-link" href="">Source Code</a>
-            </div>
+        </div>
+      </div>
+      <div class="projects__card-container">
+        <div class="projects__card">
+          <img class="projects__img" src="./image/spaceX.png" alt="project">
+          <div class="projects__card-content">
+            <h4 class="projects__card-header">SpaceX launch site</h4>
+            <p class="projects__card-info">
+              This is my first project exam. We had to use vanilla JavaScript to fetch from spaceX api, and render it
+              out on page.
+            </p>
+            <a class="projects__card-link" href="">Source Code</a>
           </div>
         </div>
       </div>
@@ -193,26 +194,26 @@
       </a>
     </div>
     <div class="footer__soMe">
-      <div class="footer__box">
-        <a href="https://www.facebook.com/lstrangstad/" target="_blank">
+      <a href="https://www.facebook.com/lstrangstad/" target="_blank">
+        <div class="footer__box">
           <img class="footer__icon" src="./image/footer-icons/facebook.svg" alt="Facebook">
-        </a>
-      </div>
-      <div class="footer__box">
-        <a href="">
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/linus-strangstad/" target="_blank">
+        <div class="footer__box">
           <img class="footer__icon" src="./image/footer-icons/linkedin.svg" alt="LinkedIn">
-        </a>
-      </div>
-      <div class="footer__box">
-        <a href="">
+        </div>
+      </a>
+      <a href="https://www.instagram.com/lstrangstad/" target="_blank">
+        <div class="footer__box">
           <img class="footer__icon" src="./image/footer-icons/insta.svg" alt="Instagram">
-        </a>
-      </div>
-      <div class="footer__box">
-        <a href="">
+        </div>
+      </a>
+      <a href="https://github.com/lstrangstad" target="_blank">
+        <div class="footer__box">
           <img class="footer__icon" src="./image/footer-icons/github.svg" alt="GitHub">
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
     <div class="footer__copyright">
       <p class="footer__details">Linus Strangstad <span class="footer__year">&copy;2021</span></p>
