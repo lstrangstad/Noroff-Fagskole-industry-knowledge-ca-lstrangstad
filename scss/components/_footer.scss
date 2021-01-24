@@ -34,7 +34,7 @@
   &__soMe {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: $primarySpacing;
   }
 
   &__box {
@@ -42,7 +42,7 @@
     width: 50px;
     background-color: #505269;
     text-align: center;
-    margin: 0 15px;
+    margin: 0 $primarySpacing;
 
     &:hover {
       transform: translateY(3px);
@@ -62,7 +62,7 @@
     font-size: 12px;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: $primarySpacing;
     letter-spacing: 2px;
     color: #9294b1;
   }

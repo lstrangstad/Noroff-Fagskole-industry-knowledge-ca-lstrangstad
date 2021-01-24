@@ -1,5 +1,5 @@
 .about {
-  padding: 15px;
+  padding: $primarySpacing;
 
   &__header {
     font-family: $headerFont;
@@ -13,7 +13,7 @@
   &__icons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
+    grid-gap: $primarySpacing;
     justify-items: center;
   }
 
@@ -39,7 +39,7 @@
   }
 
   &__box-header {
-    padding-top: 15px;
+    padding-top: $primarySpacing;
     font-family: $headerFont;
     font-size: 18px;
   }
@@ -66,7 +66,7 @@
   &__me-header {
     font-family: $headerFont;
     font-size: 18px;
-    padding-top: 15px;
+    padding-top: $primarySpacing;
   }
 
   &__me-text {
@@ -76,7 +76,7 @@
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-gap: $primarySpacing;
   }
 
   &__skills-header {
