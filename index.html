@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <meta name="description"
+    content="Hello, this is my portfolio as a front-end developer. I'm located in Bergen, Norway. I have a passion for clean code, animations and creating good looking layouts with HTML, CSS and JavaScript/React etc. Let’s make something special!">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Linus Strangstad - Portfolio</title>
@@ -81,9 +83,9 @@
         <p class="about__me-text">I’m studying Front-End Development at <a class="about__link"
             href="www.noroff.no/en">Noroff</a> in
           Bergen, Norway.
-          I have a passion for clean layouts, animations and creating
-          intuitive, dynamic user experiences.
-          <a class="about__link" href="">Let’s make something special</a>.
+          I have a passion for clean code, animations and creating good looking layouts with HTML, CSS and JavaScript
+          etc.
+          <a class="about__link" href="#contact">Let’s make something special!</a>.
         </p>
       </div>
       <div class="about__skills">
@@ -131,10 +133,13 @@
       or want to work together?</p>
     <form class="contact__form">
       <div id="nameError" class="contact__error"></div>
+      <label class="contact__label" for="nameInput"></label>
       <input id="nameInput" class="contact__input" type="text" placeholder="Name">
       <div class="contact__error" id="emailError"></div>
+      <label class="contact__label" for="emailInput"></label>
       <input id="emailInput" class="contact__input" type="text" placeholder="Email">
       <div class="contact__error" id="messageError"></div>
+      <label class="contact__label" for="messageInput"></label>
       <textarea id="messageInput" class="contact__message" name="message" id="message" cols="30" rows="10"
         placeholder="Your Message..."></textarea>
       <button class="contact__button">Submit</button>
