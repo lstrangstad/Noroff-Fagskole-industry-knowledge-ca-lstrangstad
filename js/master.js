@@ -67,3 +67,24 @@ function emailValidator(mail) {
   const regEx = /\S+@\S+\.\S+/;
   return regEx.test(mail);
 }
+
+gsap.from(".about__box", {
+  scrollTrigger: ".about__box",
+  opacity: 0,
+  duration: 1.5,
+  y: -50,
+});
+
+gsap.from(".about__me-container", {
+  scrollTrigger: ".about__skills",
+  opacity: 0,
+  duration: 2,
+  x: -600,
+});
+
+gsap.from(".about__skills", {
+  scrollTrigger: ".about__skills",
+  opacity: 0,
+  duration: 1.5,
+  x: 600,
+});
